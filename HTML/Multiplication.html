@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Multiplication page -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication</title>
+  <link rel="stylesheet" href="../CSS/Style.css">
+  <script src="../JS/MathForKids.js"></script>
+</head>
+<!-- Call multiplication function AFTER body is loaded -->
+<body onload="multiplication()">
+<!-- Create div -->
+<div id="title">&#128007; MATHMAGICIANS &#128007;</div>
+<!-- Create div with four links (four anchor elements) -->
+<div class="topbar">
+  <a href="Home.html">Home</a>
+  <a class="start" href="Math%20for%20kids.html">Math for kids</a>
+  <a href="Calculator.html">Calculator</a>
+  <a href="About%20Us.html">About Us</a>
+</div>
+<!-- Create form element with h1, h3, input and div elements inside it-->
+<form class="problem" action="#">
+  <h1>Multiplication</h1>
+  <h3 id="question"></h3>
+  <input class="inputBox" id="inputField" type="text" placeholder="Enter guess">
+  <input class="checkBox" id="checkButton" type="button" value="Check">
+  <div class="answer" id="guess"></div>
+  <input class="newQuestion" type="button" value="New problem" onclick="multiplication()">
+  <input class="seeResults" type="button" value="See guesses" onclick="seeResults()">
+</form>
+<div class="problem" id="results"></div>
+<div class="problem" id="total"></div>
+</body>
+</html>

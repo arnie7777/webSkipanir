@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Calculator page -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="../CSS/Style.css">
+  <link rel="stylesheet" href="../CSS/Calculator.css">
+</head>
+<body>
+<!-- Create div -->
+<div id="title">&#128007; MATHMAGICIANS &#128007;</div>
+<!-- Create div with four links (anchor elements) inside it-->
+<div class="topbar">
+  <a href="Home.html">Home</a>
+  <a href="Math%20for%20kids.html">Math for kids</a>
+  <a class="start" href="Calculator.html">Calculator</a>
+  <a href="About%20Us.html">About Us</a>
+</div>
+<!-- Create table where the rows inside table body is clickable, and takes the user to another HTML document-->
+<table>
+  <thead>
+  <tr>
+    <th>Arithmetic Text</th>
+    <th>Arithmetic Sign</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr onclick="window.location='CalcAdd.html';">
+    <td>Plus</td>
+    <td><img class="imgInTable" src="../IMG/Plus.jpeg" alt="Picture of plus sign"></td>
+  </tr>
+  <tr onclick="window.location='CalcSub.html';">
+    <td>Minus</td>
+    <td><img class="imgInTable" src="../IMG/Minus.jpg" alt="Picture of minus sign"></td>
+  </tr>
+  <tr onclick="window.location='CalcFac.html';">
+    <td>Factorial</td>
+    <td><img class="imgInTable" src="../IMG/Factorial.png" alt="Picture of multiply sign"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

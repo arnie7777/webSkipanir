@@ -1,0 +1,75 @@
+table {
+    font-family: Verdana;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+thead tr th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.imgInTable {
+    mix-blend-mode: multiply;  /* has nothing to do with the arithmetic multiply */
+    width: 50px;
+    align-content: center;
+}
+
+tbody {
+    font-size: 20px;
+    text-align: center;
+}
+
+tbody tr {
+    background-color: rgba(248, 148, 6, 1);
+}
+
+tbody tr:hover {
+    font-size: 30px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+tbody tr td {
+    padding: 20px
+}
+
+p {
+    font-size: 30px;
+}
+
+.inputField {
+    width: 320px;
+    padding: 10px 10px;
+    font-size: 2em;
+    margin-top: 20px;
+    float: left;
+}
+
+.buttons {
+    height: 60px;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.buttons:hover {
+    background-color: lightblue;
+}
+
+.sign {
+    font-size: 2em;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#pTagId {
+    font-size: 2.4em;
+    margin-left: 10px;
+}
