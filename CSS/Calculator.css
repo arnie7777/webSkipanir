@@ -73,3 +73,18 @@ p {
     font-size: 2.4em;
     margin-left: 10px;
 }
+
+.minimizeButtons {
+    height: 30px;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.minimizeInputField {
+    width: 160px;
+    padding: 10px 10px;
+    font-size: 1em;
+    margin-top: 20px;
+    float: left;
+}

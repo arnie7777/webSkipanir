@@ -75,3 +75,17 @@ function startFac() {
     var factorialButton = document.getElementById("factorialButton");
     factorialButton.addEventListener("click", factorial);
 } // End of function startFac
+
+$(document).ready(function (){
+
+    $("#minimizeBtn").click(function (){
+        $("#factorialButton").addClass("minimizeButtons")
+        $("#factorialField").addClass("minimizeInputField")
+    })
+
+    $("#normalBtn").click(function (){
+        $("#factorialButton").removeClass("minimizeButtons")
+        $("#factorialField").removeClass("minimizeInputField")
+    })
+
+}) // end main jquery function
