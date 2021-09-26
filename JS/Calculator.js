@@ -78,11 +78,17 @@ function startFac() {
 
 $(document).ready(function (){
 
+    /*
+    add css class to factorial button and input field, when user clicks on minimize button
+     */
     $("#minimizeBtn").click(function (){
         $("#factorialButton").addClass("minimizeButtons")
         $("#factorialField").addClass("minimizeInputField")
     })
 
+    /*
+    Remove css class from factorial button and input field when user clicks on button
+     */
     $("#normalBtn").click(function (){
         $("#factorialButton").removeClass("minimizeButtons")
         $("#factorialField").removeClass("minimizeInputField")
