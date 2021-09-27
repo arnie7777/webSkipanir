@@ -87,7 +87,7 @@ $(document).ready(function (){
     })
 
     /*
-    Remove css class from factorial button and input field when user clicks on button
+    Remove css class from factorial button and input field when user clicks on button.
      */
     $("#normalBtn").click(function (){
         $("#factorialButton").removeClass("minimizeButtons")
