@@ -36,10 +36,27 @@ html {
     text-decoration: none;
     border-left: 2px solid black;
 }
+
+.topbar h1 {
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-left: 2px solid black;
+}
+
 .topbar a:hover {
     background-color: rgba(228, 233, 237, 0.9);
     color: black;
 }
+
+.topbar h1:hover {
+    background-color: rgba(228, 233, 237, 0.9);
+    color: black;
+}
+
 .topbar a.start {
     background-color: rgba(248, 148, 6, 1);
     color: black;
@@ -182,4 +199,16 @@ div a {
     bottom: 5px;
     left: 5px;
     height: 280px;
+}
+
+#divCanvas {
+    position: relative;
+    height: 500px;
+}
+
+canvas {
+    border: 1px solid black;
+    position: absolute;
+    bottom: 100px;
+    left: 60%;
 }

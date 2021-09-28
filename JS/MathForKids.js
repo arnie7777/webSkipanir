@@ -194,3 +194,33 @@ function aboutStart() {
     about('ARNOLD KRISTIANSEN', '95');
     about('EMIL RONALDSSON', '88');
 } // Function end
+
+$(document).ready(function (){
+
+
+    $("#h1Home").click(function (){
+        $("body").children("#welcome, #funAnimation").remove()
+        $(".topbar").after("<div id=\"divCanvas\">\n" +
+            "  <canvas id='idCanvas' width=\"300\", height=\"300\"></canvas>\n" +
+            " <input id=\"radiusBtn\" type=\"button\" value=\"Click me\">\n " +
+            " <input id=\"radiusField\" type=\"number\" placeholder=\"Enter radius\">\n " +
+            "</div>")
+    })
+    $("#radiusBtn").click(function (){
+        alert("tesdt");
+        var radius = $("#radiusField").val()
+        var canvas = document.getElementById("canvasId");
+        var context = canvas.getContext("2d")
+        context.beginPath();
+        context.arc(35, 50, radius, 0, Math.PI * 2);
+        context.fillStyle = "mediumslateblue";
+        context.fill();
+    })
+
+
+
+
+
+
+
+}) // end main jquery function
