@@ -1,5 +1,28 @@
 <?php
 
+    // connect to database
+    $connection_to_db = mysqli_connect('localhost', 'arnie', 'heyhey', 'first_assignment');
+
+    // if connection fails
+    if(!$connection_to_db){
+        echo 'Error when trying to connect to database' . mysqli_connect_error();
+    } // end if
+
+
+
+    // if submit button is pressed
+    if(isset($_POST['submit'])) {
+        $x = mysqli_real_escape_string($connection_to_db, $_POST['x']);
+        $y = mysqli_real_escape_string($connection_to_db, $_POST['y']);
+        $radius = mysqli_real_escape_string($connection_to_db, $_POST['radius']);
+
+        // create sql query
+        $sql_query = "INSERT INTO circles(x,y,radius) VALUES($x, $y, $radius)";
+
+        mysqli_query($connection_to_db, $sql_query);
+
+
+    }
 
 
 ?>
@@ -28,13 +51,15 @@
 
 <div id="divCanvas">
   <canvas id='idCanvas' width="300", height="300"></canvas>
-  <form action="POST" class="classForm">
+  <form action="Circle.php" method="POST" class="classForm">
     <label>X:</label>
-    <input id="xField" type="number" placeholder="Enter position for x">
+    <input id="xField" type="number" placeholder="Enter position for x" name="x">
     <label>Y:</label>
-    <input id="yField" type="number" placeholder="Enter position for y">
+    <input id="yField" type="number" placeholder="Enter position for y" name="y">
     <label>Radius:</label>
-    <input id="radiusField" type="number" placeholder="Enter radius">
+    <input id="radiusField" type="number" placeholder="Enter radius" name="radius">
     <input id="drawBtn" type="button" value="Click to draw the circle">
+    <p></p>
+    <input id="submitBtn" type="submit" value='Submit' name="submit">
   </form>
 </div>
