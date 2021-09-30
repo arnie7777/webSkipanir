@@ -212,3 +212,9 @@ canvas {
     bottom: 100px;
     left: 60%;
 }
+
+
+.classForm {
+    position: absolute;
+    margin: 10px;
+}

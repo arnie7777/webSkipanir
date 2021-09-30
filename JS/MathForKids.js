@@ -198,29 +198,16 @@ function aboutStart() {
 $(document).ready(function (){
 
 
-    $("#h1Home").click(function (){
-        $("body").children("#welcome, #funAnimation").remove()
-        $(".topbar").after("<div id=\"divCanvas\">\n" +
-            "  <canvas id='idCanvas' width=\"300\", height=\"300\"></canvas>\n" +
-            " <input id=\"radiusBtn\" type=\"button\" value=\"Click me\">\n " +
-            " <input id=\"radiusField\" type=\"number\" placeholder=\"Enter radius\">\n " +
-            "</div>")
-    })
-    $("#radiusBtn").click(function (){
-        alert("tesdt");
+    $("#drawBtn").click(function (){
+        var x = $("#xField").val()
+        var y = $("#yField").val()
         var radius = $("#radiusField").val()
-        var canvas = document.getElementById("canvasId");
+        var canvas = document.getElementById("idCanvas");
         var context = canvas.getContext("2d")
         context.beginPath();
-        context.arc(35, 50, radius, 0, Math.PI * 2);
-        context.fillStyle = "mediumslateblue";
-        context.fill();
+        context.arc(x, y, radius, 0, Math.PI * 2);
+        context.stroke();
     })
-
-
-
-
-
 
 
 }) // end main jquery function
