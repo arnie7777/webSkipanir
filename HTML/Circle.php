@@ -1,32 +1,3 @@
-<?php
-
-    // connect to database
-    $connection_to_db = mysqli_connect('localhost', 'arnie', 'heyhey', 'first_assignment');
-
-    // if connection fails
-    if(!$connection_to_db){
-        echo 'Error when trying to connect to database' . mysqli_connect_error();
-    } // end if
-
-
-
-    // if submit button is pressed
-    if(isset($_POST['submit'])) {
-        $x = mysqli_real_escape_string($connection_to_db, $_POST['x']);
-        $y = mysqli_real_escape_string($connection_to_db, $_POST['y']);
-        $radius = mysqli_real_escape_string($connection_to_db, $_POST['radius']);
-
-        // create sql query
-        $sql_query = "INSERT INTO circles(x,y,radius) VALUES($x, $y, $radius)";
-
-        mysqli_query($connection_to_db, $sql_query);
-
-
-    }
-
-
-?>
-
 <!DOCTYPE html>
 <!-- Circle.php -->
 <html lang="en">
@@ -38,6 +9,29 @@
   <script src="../JS/MathForKids.js"></script>
 </head>
 <body>
+<?php
+
+    // connect to database and check for errors
+    include('ConnToDb.php');
+
+    // if submit button is pressed
+    if(isset($_POST['submit'])) {
+        $x = $_POST['x'];
+        $y = $_POST['y'];
+        $radius = $_POST['radius'];
+
+        // write sql query
+        $sql = "INSERT INTO circles(x,y,radius) VALUES($x, $y, $radius)";
+
+        // make query
+        mysqli_query($connection, $sql);
+
+        // close connection to database
+        mysqli_close($connection);
+    }
+?> <!-- end php -->
+
+
 <!-- Create div -->
 <div id="title">&#128007; MATHMAGICIANS &#128007;</div>
 <!-- Create div with four links (four anchor elements) -->
@@ -62,4 +56,6 @@
     <p></p>
     <input id="submitBtn" type="submit" value='Submit' name="submit">
   </form>
+  <a href="DisplayFromDb.php">Click to see data</a>
+    <!-- <a href="displayFromDb.php">Circle</a> -->
 </div>
