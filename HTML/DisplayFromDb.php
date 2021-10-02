@@ -12,7 +12,7 @@
         <?php
 
         // connect to database and check for errors
-        include('ConnToDb');
+        include('ConnToDb.php');
 
         // write sql query
         $sql = 'SELECT * FROM circles';
@@ -22,6 +22,7 @@
 
         // fetch all results (as an array of associative arrays)
         $circles = mysqli_fetch_all($result_from_query, MYSQLI_ASSOC);
+
 
         // close connection to database
         mysqli_close($connection);
