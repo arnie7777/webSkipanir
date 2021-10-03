@@ -14,8 +14,12 @@
         // connect to database and check for errors
         include('ConnToDb.php');
 
+
         // write sql query
-        $sql = 'SELECT * FROM circles';
+        $sql = 'SELECT  Circles.id, Circles.x, Circles.y, Circles.radius, Persons.name, Persons.surname
+                FROM Persons
+                LEFT JOIN Circles
+                ON Persons.PersonalNumber = Circles.creatorId;';
 
         // make query
         $result_from_query = mysqli_query($connection, $sql);
@@ -32,10 +36,12 @@
         print("<table>
                    <thead>
                        <tr>
-                           <th>id</th>
-                           <th>x</th>
-                           <th>y</th>
-                           <th>radius</th>
+                           <th>Circle ID</th>
+                           <th>X</th>
+                           <th>Y</th>
+                           <th>Radius</th>
+                           <th>Creator's name</th>
+                           <th>Creator's surname</th>
                        </tr>
                    </thead>");
 

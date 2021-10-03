@@ -214,7 +214,18 @@ canvas {
 }
 
 
+.classPerson {
+    position: absolute;
+    margin: 10px;
+}
+
+#display {
+    position: absolute;
+    top: 200px;
+}
+
 .classForm {
     position: absolute;
     margin: 10px;
+    top: 100px;
 }
