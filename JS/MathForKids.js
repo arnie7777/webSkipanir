@@ -197,17 +197,15 @@ function aboutStart() {
 
 $(document).ready(function (){
 
-
     $("#drawBtn").click(function (){
-        var x = $("#xField").val()
-        var y = $("#yField").val()
         var radius = $("#radiusField").val()
         var canvas = document.getElementById("idCanvas");
-        var context = canvas.getContext("2d")
+        var context = canvas.getContext("2d");
+        var x = $("#xField").val() + (canvas.height/2);
+        var y = $("#yField").val() + (canvas.width/2);
         context.beginPath();
         context.arc(x, y, radius, 0, Math.PI * 2);
         context.stroke();
     })
-
 
 }) // end main jquery function

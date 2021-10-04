@@ -60,8 +60,8 @@
   <a class="start" href="Circle.html">Circle</a>
 </div>
 
-<div id="divCanvas">
-  <canvas id='idCanvas' width="300", height="300"></canvas>
+<div id="divCanvas" class="form-center">
+  <canvas id='idCanvas' width="600", height="600"></canvas>
   <form action="Circle.php" method="POST" class="classPerson">
     <label>Personal number:</label>
     <input id="pNumber" type="number" placeholder="Enter personal number" name="personalNumber">
@@ -71,7 +71,6 @@
     <input id="surname" type="text" placeholder="Enter last name" name="surname">
     <label>Phone:</label>
         <input id="phone" type="number" placeholder="Enter phone number" name="phone">
-    <p></p>
     <input id="submitBtnPerson" type="submit" value='Submit' name="submitPerson">
     </form>
   <form action="Circle.php" method="POST" class="classForm">
@@ -81,12 +80,13 @@
     <input id="yField" type="number" placeholder="Enter position for y" name="y">
     <label>Radius:</label>
     <input id="radiusField" type="number" placeholder="Enter radius" name="radius">
-    <label>Creator's personal number:</label>
-        <input id="personalNumberCircle" type="number" placeholder="Enter personal number" name="personalNumberCircle">
+      <!-- <label>Creator's personal number:</label>
+      <input id="personalNumberCircle" type="number" placeholder="Enter personal number" name="personalNumberCircle"> -->
+      <p></p>
     <input id="drawBtn" type="button" value="Click to draw the circle">
-    <p></p>
+    <!-- <p></p>
     <input id="submitBtn" type="submit" value='Submit' name="submit">
   </form>
-  <a id="display" href="DisplayFromDb.php">Click to see data</a>
+  <a id="display" href="DisplayFromDb.php">Click to see data</a>  -->
     <!-- <a href="displayFromDb.php">Circle</a> -->
 </div>
