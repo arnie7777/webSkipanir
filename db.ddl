@@ -1,16 +1,17 @@
 CREATE DATABASE IF NOT EXISTS MathForKids;
 
 CREATE TABLE IF NOT EXISTS Credentials (
-	username varchar(255) PRIMARY KEY,
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	username varchar(255),
 	password varchar(255)
 );
 
 CREATE TABLE IF NOT EXISTS Results (
-	id INT AUTO_INCREMENT PRIMARY KEY,
+	result_id INT AUTO_INCREMENT PRIMARY KEY,
 	type varchar(255),
 	question varchar(255),
 	result varchar(255),
 	answer varchar(255),
-	username varchar(255),
-	FOREIGN KEY (username) REFERENCES Credentials(username)
+	user_id INT,
+	FOREIGN KEY (user_id) REFERENCES Credentials(id)
 );
