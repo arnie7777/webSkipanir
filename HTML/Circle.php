@@ -73,6 +73,7 @@
         <input id="phone" type="number" placeholder="Enter phone number" name="phone">
     <input id="submitBtnPerson" type="submit" value='Submit' name="submitPerson">
     </form>
+
   <form action="Circle.php" method="POST" class="classForm">
     <label>X:</label>
     <input id="xField" type="number" placeholder="Enter position for x" name="x">
@@ -86,7 +87,7 @@
     <input id="drawBtn" type="button" value="Click to draw the circle">
     <!-- <p></p>
     <input id="submitBtn" type="submit" value='Submit' name="submit">
-  </form>
-  <a id="display" href="DisplayFromDb.php">Click to see data</a>  -->
+  </form>   -->
+  <a id="display" href="DisplayFromDb.php">Click to see data</a>
     <!-- <a href="displayFromDb.php">Circle</a> -->
 </div>
