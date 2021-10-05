@@ -1,23 +1,10 @@
+<?php include("base.php");?>
 <!DOCTYPE html>
-<!-- Calculator page -->
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="../CSS/Style.css">
-  <link rel="stylesheet" href="../CSS/Calculator.css">
+    <link rel="stylesheet" href="../CSS/Calculator.css">
 </head>
 <body>
-<!-- Create div -->
-<div id="title">&#128007; MATHMAGICIANS &#128007;</div>
-<!-- Create div with four links (anchor elements) inside it-->
-<div class="topbar">
-  <a href="Home.html">Home</a>
-  <a href="Math%20for%20kids.html">Math for kids</a>
-  <a class="start" href="Calculator.html">Calculator</a>
-  <a href="About%20Us.html">About Us</a>
-  <a href="Circle.php">Circle</a>
-</div>
 <!-- Create table where the rows inside table body is clickable, and takes the user to another HTML document-->
 <table>
   <thead>

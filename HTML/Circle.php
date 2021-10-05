@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<!-- Circle.php -->
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="../CSS/Style.css">
-  <script src="../JS/JQuery.js"></script>
-  <script src="../JS/MathForKids.js"></script>
-</head>
-<body>
+<?php include("base.php");?>
 <?php
 
     // connect to database and check for errors
@@ -49,17 +39,10 @@
 ?> <!-- end php -->
 
 
-<!-- Create div -->
-<div id="title">&#128007; MATHMAGICIANS &#128007;</div>
 <!-- Create div with four links (four anchor elements) -->
-<div class="topbar">
-  <a href="Home.html">Home</a>
-  <a href="Math%20for%20kids.html">Math for Kids</a>
-  <a href="Calculator.html">Calculator</a>
-  <a href="About%20Us.html">About Us</a>
-  <a class="start" href="Circle.html">Circle</a>
-</div>
-
+<!DOCTYPE html>
+<html>
+<body>
 <div id="divCanvas" class="form-center">
   <canvas id='idCanvas' width="600", height="600"></canvas>
   <form action="Circle.php" method="POST" class="classPerson">
@@ -91,3 +74,5 @@
   <a id="display" href="DisplayFromDb.php">Click to see data</a>
     <!-- <a href="displayFromDb.php">Circle</a> -->
 </div>
+</body>
+</html>
