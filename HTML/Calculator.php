@@ -14,15 +14,15 @@
   </tr>
   </thead>
   <tbody>
-  <tr onclick="window.location='CalcAdd.html';">
+  <tr onclick="window.location='CalcAdd.php';">
     <td>Plus</td>
     <td><img class="imgInTable" src="../IMG/Plus.jpeg" alt="Picture of plus sign"></td>
   </tr>
-  <tr onclick="window.location='CalcSub.html';">
+  <tr onclick="window.location='CalcSub.php';">
     <td>Minus</td>
     <td><img class="imgInTable" src="../IMG/Minus.jpg" alt="Picture of minus sign"></td>
   </tr>
-  <tr onclick="window.location='CalcFac.html';">
+  <tr onclick="window.location='CalcFac.php';">
     <td>Factorial</td>
     <td><img class="imgInTable" src="../IMG/Factorial.png" alt="Picture of multiply sign"></td>
   </tr>

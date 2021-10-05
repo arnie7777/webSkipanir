@@ -1,25 +1,12 @@
+<?php include("base.php");?>
 <!DOCTYPE html>
-<!-- CalcAdd page -->
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CalcAdd</title>
-    <link rel="stylesheet" href="../CSS/Style.css">
     <link rel="stylesheet" href="../CSS/Calculator.css">
     <script src="../JS/Calculator.js"></script>
 </head>
 <!-- Call startAdd function AFTER body is loaded -->
 <body onload="startAdd()">
-<!-- Create div -->
-<div id="title">&#128007; MATHMAGICIANS &#128007;</div>
-<!-- Create div with four links (anchor elements) inside it -->
-<div class="topbar">
-    <a href="Home.html">Home</a>
-    <a href="Math%20for%20kids.html">Math for kids</a>
-    <a class="start" href="Calculator.html">Calculator</a>
-    <a href="About%20Us.html">About Us</a>
-    <a href="Circle.php">Circle</a>
-</div>
 <!-- Create form element with p and input elements inside it -->
 <form action="#">
     <input id="additionField1" class="inputField" type="text" placeholder="Enter first number">
