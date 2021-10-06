@@ -70,8 +70,7 @@ function division() {
         // Appends a string to HTML tag with id="question" and assigns to variable
         question = document.getElementById("question").innerHTML = "What is " + a1 * a2 + " / " + a2 + " ?"
         result = (a1 * a2) / a2
-    }
-    else {
+    } else {
         if (a1 == 0) {
             a1 = 1;
         }
@@ -106,8 +105,7 @@ function guess() {
             theArray.push(question, guess.value, output);
             incorrect++;
         }
-    }
-    else {
+    } else {
         output = '<div>Please enter a number before<br>clicking on the "Check" button !</div>';
     }
     guess.value = ""; // Sets value to empty string
@@ -195,19 +193,20 @@ function aboutStart() {
     about('EMIL RONALDSSON', '88');
 } // Function end
 
-$(document).ready(function (){
+$(document).ready(function () {
 
-    $("#drawBtn").click(function (){
-        var radius = $("#radiusField").val();
-        var x = parseInt($("#xField").val());
-        var y = parseInt($("#yField").val());
+    $("#drawBtn").click(function () {
+        var radius = $("#radiusField").val() * 20;
+        var x = parseInt($("#xField").val()) * 20;
+        var y = -(parseInt($("#yField").val())) * 20;
+        var color = $("#colourCircle").val();
         var canvas = document.getElementById("idCanvas");
         var context = canvas.getContext("2d");
-        x = x + canvas.height/2;
-        y = y + canvas.width/2;
         context.beginPath();
         context.arc(x, y, radius, 0, Math.PI * 2);
+        context.strokeStyle = color;
         context.stroke();
     })
+
 
 }) // end main jquery function
