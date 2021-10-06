@@ -228,10 +228,15 @@ div a {
     height: 280px;
 }
 
+#divForm {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
 #divCanvas {
     position: relative;
-    height: 800px;
-    margin: auto;
+    top: 800px;
     display: flex;
     text-align: center;
 }
@@ -241,12 +246,12 @@ div a {
     justify-content: center;
 }
 
-
 canvas {
     border: 2px solid black;
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     left: 30%;
+    background-color: white;
 }
 
 .classPerson {
