@@ -208,5 +208,25 @@ $(document).ready(function () {
         context.stroke();
     })
 
+    $("#lineBtn").click(function () {
+        var x1 = parseInt($("#x1Field").val()) * 20;
+        var x2 = parseInt($("#x2Field").val()) * 20;
+        var x3 = parseInt($("#x3Field").val()) * 20;
+        var x4 = parseInt($("#x4Field").val()) * 20;
+        var y1 = -(parseInt($("#y1Field").val())) * 20;
+        var y2 = -(parseInt($("#y2Field").val())) * 20;
+        var y3 = -(parseInt($("#y3Field").val())) * 20;
+        var y4 = -(parseInt($("#y4Field").val())) * 20;
+        var canvas = document.getElementById("idCanvas");
+        var context = canvas.getContext("2d");
+        context.beginPath();
+        context.moveTo(x1, y1);
+        context.lineTo(x2, y2);
+        context.lineTo(x3, y3);
+        context.lineTo(x4, y4);
+        context.strokeStyle = "black";
+        context.stroke();
+    })
+
 
 }) // end main jquery function

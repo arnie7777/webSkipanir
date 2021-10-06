@@ -46,20 +46,20 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 <body onload="coordinationGrid()">
-<div id="divCanvas" class="form-center">
-    <canvas id='idCanvas' width="600" height="600"></canvas>
-    <form action="Circle.php" method="POST" class="classPerson">
-        <label>Personal number:</label>
-        <input id="pNumber" type="number" placeholder="Enter personal number" name="personalNumber">
-        <label>Name:</label>
-        <input id="name" type="text" placeholder="Enter first name" name="name">
-        <label>Surname:</label>
-        <input id="surname" type="text" placeholder="Enter last name" name="surname">
-        <label>Phone:</label>
-        <input id="phone" type="number" placeholder="Enter phone number" name="phone">
-        <input id="submitBtnPerson" type="submit" value='Submit' name="submitPerson">
-    </form>
+<!-- <form action="Circle.php" method="POST" class="classPerson">
+    <label>Personal number:</label>
+    <input id="pNumber" type="number" placeholder="Enter personal number" name="personalNumber">
+    <label>Name:</label>
+    <input id="name" type="text" placeholder="Enter first name" name="name">
+    <label>Surname:</label>
+    <input id="surname" type="text" placeholder="Enter last name" name="surname">
+    <label>Phone:</label>
+    <input id="phone" type="number" placeholder="Enter phone number" name="phone">
+    <input id="submitBtnPerson" type="submit" value='Submit' name="submitPerson">
+</form> -->
 
+
+<div id="divForm" class="form-center">
     <form action="Circle.php" method="POST" class="classForm">
         <label>X:</label>
         <input id="xField" type="number" placeholder="Enter position for x" name="x">
@@ -71,13 +71,37 @@ if (isset($_POST['submit'])) {
         <input id="colourCircle" type="color">
         <!-- <label>Creator's personal number:</label>
         <input id="personalNumberCircle" type="number" placeholder="Enter personal number" name="personalNumberCircle"> -->
-        <p></p>
         <input id="drawBtn" type="button" value="Click to draw the circle">
-        <!-- <p></p>
-        <input id="submitBtn" type="submit" value='Submit' name="submit">
-      </form>
-      <a id="display" href="DisplayFromDb.php">Click to see data</a> -->
-        <!-- <a href="displayFromDb.php">Circle</a> -->
+        <p></p>
+        <br>
+        <label>X1:</label>
+        <input id="x1Field" type="number" placeholder="Enter position for x1" name="x1">
+        <label>X2:</label>
+        <input id="x2Field" type="number" placeholder="Enter position for x2" name="x2">
+        <label>X3:</label>
+        <input id="x3Field" type="number" placeholder="Enter position for x3" name="x3">
+        <label>X4:</label>
+        <input id="x4Field" type="number" placeholder="Enter position for x4" name="x4">
+        <br>
+        <label>Y1:</label>
+        <input id="y1Field" type="number" placeholder="Enter position for y1" name="y1">
+        <label>Y2:</label>
+        <input id="y2Field" type="number" placeholder="Enter position for y2" name="y2">
+        <label>Y3:</label>
+        <input id="y3Field" type="number" placeholder="Enter position for y3" name="y3">
+        <label>Y4:</label>
+        <input id="y4Field" type="number" placeholder="Enter position for y4" name="y4">
+        <br>
+        <br>
+        <input id="lineBtn" type="button" value="Click to draw the lines">
+</form>
 </div>
+<!-- <input id="submitBtn" type="submit" value='Submit' name="submit">
+<a id="display" href="DisplayFromDb.php">Click to see data</a> -->
+<!-- <a href="displayFromDb.php">Circle</a> -->
+<div id="divCanvas" class="form-center">
+    <canvas id='idCanvas' width="600" height="600"></canvas>
+</div>
+
 </body>
 </html>
