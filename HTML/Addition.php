@@ -1,6 +1,7 @@
-<?php include("base.php");?>
+<?php include("TopBar.php");?>
 <!DOCTYPE html>
 <html>
+    <!-- Call startAdd function AFTER body is loaded -->
     <body onload="addition()">
     <!-- Create form element with h1, h3, input and div elements inside it-->
     <form class="problem" action="#">

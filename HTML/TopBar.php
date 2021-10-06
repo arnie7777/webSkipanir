@@ -13,13 +13,12 @@
 <div id="title">&#128007; MATHMAGICIANS &#128007;</div>
 <!-- Create div with four links (four anchor elements) -->
 <div class="topbar">
-    <a class="start" href="Home.php">Home</a>
-    <a href="Math%20for%20kids.php">Math for Kids</a>
-    <a href="Calculator.php">Calculator</a>
-    <a href="About%20Us.php">About Us</a>
-    <a href="Circle.php">Circle</a>
-    <a href="Login.php">Login</a>
+    <a id="home" href="Home.php">Home</a>
+    <a id="mfk" href="MathForKids.php">Math for Kids</a>
+    <a id="calc" href="Calculator.php">Calculator</a>
+    <a id="about" href="AboutUs.php">About Us</a>
+    <a id="circle" href="Circle.php">Circle</a>
+    <a id="login" href="Login.php">Login</a>
 </div>
-
 </body>
 </html>

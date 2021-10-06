@@ -1,4 +1,4 @@
-<?php include("base.php");?>
+<?php include("TopBar.php");?>
 <!DOCTYPE html>
 <html>
 <!-- Call startAdd function AFTER body is loaded -->
@@ -17,5 +17,3 @@
 <div class="problem" id="total"></div>
 </body>
 </html>
-
-<a href="ConnToDb.php">Click to see data</a>

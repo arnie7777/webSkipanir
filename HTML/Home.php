@@ -1,4 +1,4 @@
-<?php include("base.php");?>
+<?php include("TopBar.php");?>
 <html>
 <body>
 <!-- Create div with two p element inside it -->

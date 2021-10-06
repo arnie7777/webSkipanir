@@ -1,4 +1,4 @@
-<?php include("base.php");?>
+<?php include("TopBar.php");?>
 <!DOCTYPE html>
 <html>
 <!-- Call startAdd function AFTER body is loaded -->

@@ -30,6 +30,12 @@ function subtraction() {
     // Generates a random number between 0 to 9 and assigns to variable
     var a1 = Math.floor(Math.random() * 10);
     var a2 = Math.floor(Math.random() * 10);
+
+    if (a1 < a2) {
+        const temp = a1;
+        a1 = a2;
+        a2 = temp;
+    }
     // Appends a string to HTML tag with id="question" and assigns to variable
     question = document.getElementById("question").innerHTML = "What is " + a1 + " - " + a2 + " ?"
     result = a1 - a2; // Assigns the sum to variable
@@ -86,6 +92,7 @@ function division() {
 Function that checks if guess from user is correct, outputs the result and
 appends items to array.
  */
+
 function guess() {
     var output = ""; // Assigns empty string to variable
     var guess = document.getElementById("inputField");
@@ -209,5 +216,27 @@ $(document).ready(function (){
         context.arc(x, y, radius, 0, Math.PI * 2);
         context.stroke();
     })
+    let currentPage = $(location).attr("href");
+    let href = currentPage.substring(currentPage.indexOf('HTML/') + 5)
 
+    if (href == 'Home.php') {
+        $("#home").addClass("start");
+    }
+    if (href == 'MathForKids.php' || href == 'Addition.php' || href == 'Subtraction.php' ||
+        href == 'Multiplication.php' || href == 'Division.php') {
+        $("#mfk").addClass("start");
+    }
+    if (href == 'Calculator.php' || href == 'CalcAdd.php' || href == 'CalcSub.php' ||
+        href == 'CalcFac.php') {
+        $("#calc").addClass("start");
+    }
+    if (href == 'AboutUs.php') {
+        $("#about").addClass("start");
+    }
+    if (href == 'Circle.php') {
+        $("#circle").addClass("start");
+    }
+    if (href == 'Login.php') {
+        $("#login").addClass("start");
+    }
 }) // end main jquery function

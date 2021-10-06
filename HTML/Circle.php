@@ -1,4 +1,4 @@
-<?php include("base.php");?>
+<?php include("TopBar.php");?>
 <?php
 
     // connect to database and check for errors
