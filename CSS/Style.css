@@ -230,22 +230,57 @@ div a {
 
 #divForm {
     position: relative;
-    margin-top: auto;
-    margin-bottom: 50px;
+    top: -60px;
+    flex-direction: column;
+}
+#divForm div {
+    margin-top: 20px;
+}
+#divForm label {
+    font-size: 2em;
+    font-family: Comic Sans MS;
+}
+#divForm input {
+    height: 40px;
+    width: 230px;
+    position: absolute;
+    left: 150px;
+    font-size: 1.2em;
+    font-family: Comic Sans MS;
+}
+.drawSubmit {
+    position: absolute;
+}
+#submitBtn {
+    margin-top: 60px;
 }
 
 #divCanvas {
     position: relative;
-    top: 800px;
-    display: flex;
     text-align: center;
+    margin-top: 640px;
 }
-
-.form-center {
-    display: flex;
-    justify-content: center;
+#drawLines {
+    position: absolute;
+    flex-direction: column;
+    top: 190px;
+    right: 100px;
 }
-
+#drawLines label {
+    font-size: 2em;
+    font-family: Comic Sans MS;
+}
+#drawLines div {
+    margin-top: 30px;
+}
+#drawLines input {
+    height: 40px;
+    width: 230px;
+    position: absolute;
+    left: 80px;
+    font-size: 1.2em;
+    font-family: Comic Sans MS;
+}
 canvas {
     border: 2px solid black;
     position: absolute;
