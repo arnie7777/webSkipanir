@@ -140,5 +140,7 @@ if (isset($_POST['submit'])) {
         <input id="lineBtn" type="button" value="Click to draw the line">
     </div>
 </div>
+<button id="clearCanvas"><a href="Circle.php">CLICK TO CLEAR CANVAS</a></button>
+<!--<input id="clearCanvas" type="button" value="CLICK TO CLEAR CANVAS">-->
 </body>
 </html>

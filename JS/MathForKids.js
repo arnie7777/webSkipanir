@@ -241,6 +241,11 @@ $(document).ready(function (){
         context.strokeStyle = color;
         context.stroke();
     })
+    // $("#clearCanvas").click(function (){
+    //     var canvas = document.getElementById("idCanvas");
+    //     var context = canvas.getContext("2d");
+    //     context.clearRect(-300, -300, canvas.width, canvas.height);
+    // })
 
     let currentPage = $(location).attr("href");
     let href = currentPage.substring(currentPage.indexOf('HTML/') + 5)
