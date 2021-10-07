@@ -1,4 +1,4 @@
-<?php include("base.php"); ?>
+<?php include("TopBar.php"); ?>
 <head>
     <script src="../JS/coordinationGrid.js"></script>
 </head>

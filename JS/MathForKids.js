@@ -204,16 +204,16 @@ function aboutStart() {
 
 $(document).ready(function (){
 
-    $("#drawBtn").click(function (){
-        var radius = $("#radiusField").val();
-        var x = parseInt($("#xField").val());
-        var y = parseInt($("#yField").val());
+    $("#drawBtn").click(function () {
+        var radius = $("#radiusField").val() * 20;
+        var x = parseInt($("#xField").val()) * 20;
+        var y = -(parseInt($("#yField").val())) * 20;
+        var color = $("#colourCircle").val();
         var canvas = document.getElementById("idCanvas");
         var context = canvas.getContext("2d");
-        x = x + canvas.height/2;
-        y = y + canvas.width/2;
         context.beginPath();
         context.arc(x, y, radius, 0, Math.PI * 2);
+        context.strokeStyle = color;
         context.stroke();
     })
 
