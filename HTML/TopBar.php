@@ -16,8 +16,8 @@
     <a id="home" href="Home.php">Home</a>
     <a id="mfk" href="MathForKids.php">Math for Kids</a>
     <a id="calc" href="Calculator.php">Calculator</a>
+    <a id="circle" href="Circle.php">Draw</a>
     <a id="about" href="AboutUs.php">About Us</a>
-    <a id="circle" href="Circle.php">Circle</a>
     <a id="login" href="Login.php">Login</a>
 </div>
 </body>

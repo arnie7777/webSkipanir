@@ -152,6 +152,10 @@ outputs the table.
 function seeTotal() {
     var rate = 100;
 
+    if (correct == 0 && incorrect == 0) {
+        rate = 0;
+    }
+
     // If incorrect, will calculate rate, else rate is unchanged.
     if (incorrect > 0) {
         rate = ((correct * 100) / (correct + incorrect)).toFixed(0);
@@ -208,7 +212,7 @@ $(document).ready(function (){
         var radius = $("#radiusField").val() * 20;
         var x = parseInt($("#xField").val()) * 20;
         var y = -(parseInt($("#yField").val())) * 20;
-        var color = $("#colourCircle").val();
+        var color = $("#colorCircle").val();
         var canvas = document.getElementById("idCanvas");
         var context = canvas.getContext("2d");
         context.beginPath();
@@ -226,6 +230,7 @@ $(document).ready(function (){
         var y2 = -(parseInt($("#y2Field").val())) * 20;
         // var y3 = -(parseInt($("#y3Field").val())) * 20;
         // var y4 = -(parseInt($("#y4Field").val())) * 20;
+        var color = $("#colorLine").val();
         var canvas = document.getElementById("idCanvas");
         var context = canvas.getContext("2d");
         context.beginPath();
@@ -233,7 +238,7 @@ $(document).ready(function (){
         context.lineTo(x2, y2);
         // context.lineTo(x3, y3);
         // context.lineTo(x4, y4);
-        context.strokeStyle = "black";
+        context.strokeStyle = color;
         context.stroke();
     })
 
@@ -251,11 +256,11 @@ $(document).ready(function (){
         href == 'CalcFac.php') {
         $("#calc").addClass("start");
     }
-    if (href == 'AboutUs.php') {
-        $("#about").addClass("start");
-    }
     if (href == 'Circle.php') {
         $("#circle").addClass("start");
+    }
+    if (href == 'AboutUs.php') {
+        $("#about").addClass("start");
     }
     if (href == 'Login.php') {
         $("#login").addClass("start");

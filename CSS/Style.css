@@ -22,6 +22,8 @@ html {
 .topbar {
     background: black;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-top: 1px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
@@ -33,7 +35,7 @@ html {
     float: left;
     color: white;
     text-align: center;
-    padding: 20px 45px;
+    padding: 20px 10px;
     font-size: 2em;
     font-weight: bold;
     text-decoration: none;
@@ -230,8 +232,9 @@ div a {
 
 #divForm {
     position: relative;
-    top: -60px;
+    top: -30px;
     flex-direction: column;
+    margin-left: 20px;
 }
 #divForm div {
     margin-top: 20px;
@@ -244,7 +247,7 @@ div a {
     height: 40px;
     width: 230px;
     position: absolute;
-    left: 150px;
+    left: 140px;
     font-size: 1.2em;
     font-family: Comic Sans MS;
 }
@@ -263,8 +266,8 @@ div a {
 #drawLines {
     position: absolute;
     flex-direction: column;
-    top: 190px;
-    right: 100px;
+    top: 210px;
+    right: 110px;
 }
 #drawLines label {
     font-size: 2em;
@@ -277,7 +280,7 @@ div a {
     height: 40px;
     width: 230px;
     position: absolute;
-    left: 80px;
+    left: 120px;
     font-size: 1.2em;
     font-family: Comic Sans MS;
 }
@@ -293,10 +296,26 @@ canvas {
     position: absolute;
     margin: 10px;
 }
-
 #display {
-    position: absolute;
-    top: 200px;
+    position: relative;
+    left: 30.65%;
+    top: 12px;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: Comic Sans MS;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(248, 148, 6, 1);
+
+}
+#display a {
+    text-decoration: none;
+    color: black;
+}
+#display:hover {
+    background-color: lightgray;
 }
 
 .classForm {

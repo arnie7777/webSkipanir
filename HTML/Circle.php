@@ -8,32 +8,32 @@
 include('ConnToDb.php');
 
 // if submit button below person fields is pressed
-if (isset($_POST['submitPerson'])) {
-    $personalNumber = $_POST['personalNumber'];
-    $name = $_POST['name'];
-    $surname = $_POST['surname'];
-    $phone = $_POST['phone'];
-
-    $sql = "INSERT INTO Persons(personalNumber,name,surname,phoneNumber)
-                VALUES($personalNumber, '$name', '$surname', $phone)";
-
-    mysqli_query($connection, $sql);
-
-    mysqli_close($connection);
-
-}
+//if (isset($_POST['submitPerson'])) {
+//    $personalNumber = $_POST['personalNumber'];
+//    $name = $_POST['name'];
+//    $surname = $_POST['surname'];
+//    $phone = $_POST['phone'];
+//
+//    $sql = "INSERT INTO Persons(personalNumber,name,surname,phoneNumber)
+//                VALUES($personalNumber, '$name', '$surname', $phone)";
+//
+//    mysqli_query($connection, $sql);
+//
+//    mysqli_close($connection);
+//}
 
 // if submit button below circle fields is pressed
 if (isset($_POST['submit'])) {
     $x = $_POST['x'];
     $y = $_POST['y'];
     $radius = $_POST['radius'];
+    $color = $_POST['color'];
 //    $personalNumberCircle = $_POST['personalNumberCircle'];
 
     // write sql query
 //    $sql = "INSERT INTO Circles(x,y,radius,creatorId) VALUES($x, $y, $radius, $personalNumberCircle)";
-    $sql = "INSERT INTO Circles(x,y,radius) 
-            VALUES($x, $y, $radius)";
+    $sql = "INSERT INTO Circles(x,y,radius, color) 
+            VALUES($x, $y, $radius, '$color')";
 
     // make query
     mysqli_query($connection, $sql);
@@ -64,26 +64,26 @@ if (isset($_POST['submit'])) {
     <form action="Circle.php" method="POST" class="classForm">
         <h1>DRAW A CIRCLE</h1>
         <div>
-            <label>X: </label>
-            <input id="xField" type="number" placeholder="Enter position for x" name="x">
+            <label>X:</label>
+            <input id="xField" type="number" placeholder=" Enter position for x" name="x">
         </div>
         <div>
-            <label>Y: </label>
-            <input id="yField" type="number" placeholder="Enter position for y" name="y">
+            <label>Y:</label>
+            <input id="yField" type="number" placeholder=" Enter position for y" name="y">
         </div>
         <div>
-            <label>Radius: </label>
-            <input id="radiusField" type="number" placeholder="Enter radius" name="radius">
+            <label>Radius:</label>
+            <input id="radiusField" type="number" placeholder=" Enter radius" name="radius">
         </div>
         <div>
-            <label>Color: </label>
-            <input id="colourCircle" type="color">
+            <label>Color:</label>
+            <input id="colorCircle" type="color" name="color">
         </div>
         <!-- <label>Creator's personal number:</label>
         <input id="personalNumberCircle" type="number" placeholder="Enter personal number" name="personalNumberCircle"> -->
         <div class="drawSubmit">
             <input id="drawBtn" type="button" value="Click to draw the circle">
-            <input id="submitBtn" type="submit" value='Submit' name="submit">
+            <input id="submitBtn" type="submit" value='Submit Circle' name="submit">
         </div>
 <!--        <p></p>-->
 <!--        <br>-->
@@ -109,6 +109,7 @@ if (isset($_POST['submit'])) {
 <!--        <input id="lineBtn" type="button" value="Click to draw the lines">-->
     </form>
 </div>
+<button id="display"><a href="Home.php">CLICK TO SEE SUBMITTED DATA</a></button>
 <!-- <input id="submitBtn" type="submit" value='Submit' name="submit">
 <a id="display" href="DisplayFromDb.php">Click to see data</a> -->
 <!-- <a href="displayFromDb.php">Circle</a> -->
@@ -119,17 +120,21 @@ if (isset($_POST['submit'])) {
     <div>
         <h1>DRAW A LINE</h1>
         <label>X1:</label>
-        <input id="x1Field" type="number" placeholder="Enter position for x1" name="x1">
+        <input id="x1Field" type="number" placeholder=" Enter position for x1" name="x1">
         <br><br>
         <label>Y1:</label>
-        <input id="y1Field" type="number" placeholder="Enter position for y1" name="y1">
+        <input id="y1Field" type="number" placeholder=" Enter position for y1" name="y1">
     </div>
     <div>
         <label>X2:</label>
-        <input id="x2Field" type="number" placeholder="Enter position for x2" name="x2">
+        <input id="x2Field" type="number" placeholder=" Enter position for x2" name="x2">
         <br><br>
         <label>Y2:</label>
-        <input id="y2Field" type="number" placeholder="Enter position for y2" name="y2">
+        <input id="y2Field" type="number" placeholder=" Enter position for y2" name="y2">
+    </div>
+    <div>
+        <label>Color: </label>
+        <input id="colorLine" type="color">
     </div>
     <div>
         <input id="lineBtn" type="button" value="Click to draw the line">
