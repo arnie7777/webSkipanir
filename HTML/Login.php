@@ -24,7 +24,7 @@ if(isset($_POST['submit'])) {
         while($row=$result->fetch_assoc()) {
             // Check if username and password match
             if ($row['username'] == $username and $row['password'] == $password) {
-                header("location: Home.html?id=" . $row['id']);
+                header("location: Home.php?id=" . $row['id']);
                 exit();
             } elseif ($row['username'] == $username) {
                 print("Wrong password!");
@@ -38,11 +38,13 @@ if(isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
     <body>
-        <div class="login-page">
-                <form method="post" action="Login.php">
-                    <input name="username" type="text" id="username" placeholder="username">
-                    <input name="password" type="password" id="password" placeholder="password">
-                    <input name="submit" id="login" type="submit">
+        <div class="loginDiv">
+                <form id="loginForm" method="post" action="Login.php">
+                    <input class="loginInput"  name="username" type="text" id="username" placeholder="username">
+                    <br>
+                    <input class="loginInput"  name="password" type="password" id="password" placeholder="password">
+                    <br>
+                    <input class="loginInput" name="submit" id="login" type="submit">
                 </form>
         </div>
     </body>

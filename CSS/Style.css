@@ -362,3 +362,12 @@ canvas {
     margin: 10px;
     top: 60px;
 }
+
+#loginForm {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.loginInput {
+    font-family: "Comic Sans MS";
+}

@@ -52,6 +52,11 @@ function multiplication() {
     // Generates a random number between 0 to 9 and assigns to variable
     var a1 = Math.floor(Math.random() * 10);
     var a2 = Math.floor(Math.random() * 10);
+    if (a2 > a1) {
+        let temp = a1;
+        a1 = a2;
+        a2 = temp;
+    }
     // Appends a string to HTML tag with id="question" and assigns to variable
     question = document.getElementById("question").innerHTML = "What is " + a1 + " x " + a2 + " ?"
     result = a1 * a2; // Assigns the sum to variable
