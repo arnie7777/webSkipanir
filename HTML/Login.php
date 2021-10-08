@@ -35,8 +35,10 @@ if(isset($_POST['submit'])) {
     }
 }
 ?>
-<!DOCTYPE html>
 <html>
+    <head>
+        <title>Login</title>
+    </head>
     <body>
         <div class="loginDiv">
                 <form id="loginForm" method="post" action="Login.php">
