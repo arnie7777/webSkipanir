@@ -320,7 +320,7 @@ div a {
     background-color: lightgray;
 }
 
-canvas {
+.drawCanvas {
     border: 2px solid black;
     position: absolute;
     bottom: 10px;
@@ -336,7 +336,7 @@ canvas {
 #display {
     position: relative;
     left: 20px;
-    top: 490px;
+    top: 510px;
     font-size: 1.3em;
     font-weight: bolder;
     font-family: Comic Sans MS;
@@ -345,15 +345,12 @@ canvas {
     border: 2px solid black;
     border-radius: 20px;
     background-color: rgba(248, 148, 6, 1);
-}
-
-#display a {
     text-decoration: none;
-    color: black;
 }
 
 #display:hover {
     background-color: lightgray;
+    cursor: pointer;
 }
 
 .classForm {
@@ -361,4 +358,120 @@ canvas {
     display: inline-block;
     margin: 10px;
     top: 60px;
+}
+#indexTable {
+    margin: 10px;
+    position: relative;
+}
+#indexTable th {
+    background-color: black;
+    color: white;
+}
+#indexTable td {
+    background-color: rgba(248, 148, 6, 1);
+}
+#action {
+    border-radius: 15px;
+}
+#indexTable .indexAction {
+    padding: 0;
+    border: hidden;
+    background: transparent;
+}
+.indexButton {
+    height: 40px;
+    font-family: Comic Sans MS;
+    font-size: 1em;
+    border-radius: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid black;
+}
+.indexButton a {
+    text-decoration: none;
+    color: black;
+}
+.indexButton:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+.indexCanvas {
+    border: 2px solid black;
+    position: fixed;
+    background-color: white;
+    bottom: -40px;
+    right: 150px;
+    transform: scale(0.88);
+    -webkit-transform: scale(0.84);
+    -moz-transform: scale(0.88);
+    -ms-transform: scale(0.88);
+}
+#indexCreate {
+    position: fixed;
+    font-size: 1.4em;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    background-color: rgba(248, 148, 6, 1);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    top: 210px;
+    left: 685px;
+    text-decoration: none;
+}
+
+#indexCreate:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#success {
+    position: absolute;
+    left: 36px;
+    bottom: 15px;
+    color: green;
+    font-size: 1.6em;
+    font-family: Comic Sans MS;
+    font-weight: bolder;
+}
+.table {
+    margin: 0 10px;
+    font-size: 1.8em;
+}
+.col1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.col2 {
+    background-color: rgba(248, 148, 6, 1);
+    padding: 10px;
+}
+.backButton {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: Comic Sans MS;
+    background-color: rgba(248, 148, 6, 1);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+.backButton:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+#readBack {
+    margin: 10px 8px;
+}
+.sure {
+    margin: 10px;
+}
+.deleteBack {
+    margin: 10px;
+}
+#updateBack {
+    position: absolute;
+    bottom: 50px;
+    left: 130px;
 }

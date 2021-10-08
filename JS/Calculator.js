@@ -75,23 +75,3 @@ function startFac() {
     var factorialButton = document.getElementById("factorialButton");
     factorialButton.addEventListener("click", factorial);
 } // End of function startFac
-
-$(document).ready(function (){
-
-    /*
-    add css class to factorial button and input field, when user clicks on minimize button.
-     */
-    $("#minimizeBtn").click(function (){
-        $("#factorialButton").addClass("minimizeButtons")
-        $("#factorialField").addClass("minimizeInputField")
-    })
-
-    /*
-    Remove css class from factorial button and input field when user clicks on button.
-     */
-    $("#normalBtn").click(function (){
-        $("#factorialButton").removeClass("minimizeButtons")
-        $("#factorialField").removeClass("minimizeInputField")
-    })
-
-}) // end main jquery function

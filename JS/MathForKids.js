@@ -208,6 +208,8 @@ function aboutStart() {
 
 $(document).ready(function (){
 
+    $("#success").fadeOut(6000);
+
     $("#drawBtn").click(function () {
         var radius = $("#radiusField").val() * 20;
         var x = parseInt($("#xField").val()) * 20;
@@ -249,6 +251,8 @@ $(document).ready(function (){
 
     let currentPage = $(location).attr("href");
     let href = currentPage.substring(currentPage.indexOf('HTML/') + 5)
+    href = href.split('?');
+    href = href[0];
 
     if (href == 'Home.php') {
         $("#home").addClass("start");
@@ -261,7 +265,8 @@ $(document).ready(function (){
         href == 'CalcFac.php') {
         $("#calc").addClass("start");
     }
-    if (href == 'Circle.php') {
+    if (href == 'Circle.php' || href == 'Index.php' || href == 'Read.php' ||
+        href == 'Update.php' || href == 'Delete.php') {
         $("#circle").addClass("start");
     }
     if (href == 'AboutUs.php') {

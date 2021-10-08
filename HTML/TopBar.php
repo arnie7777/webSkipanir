@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
     <link rel="stylesheet" href="../CSS/Style.css">
     <script src="../JS/JQuery.js"></script>
     <script src="../JS/MathForKids.js"></script>

@@ -1,7 +1,8 @@
 <?php include("TopBar.php");?>
-<!-- Create div with four links (four anchor elements) -->
-<!DOCTYPE html>
 <html>
+    <head>
+        <title>Math For Kids</title>
+    </head>
     <body>
         <div class="images">
             <a href="Addition.php"><img class="image" src="../IMG/Addition.jpg" alt="Addition"></a>
