@@ -273,7 +273,7 @@ div a {
 #drawLines {
     position: absolute;
     flex-direction: column;
-    top: 180px;
+    top: 200px;
     right: 110px;
 }
 
