@@ -475,3 +475,11 @@ div a {
     bottom: 50px;
     left: 130px;
 }
+#loginForm {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.loginInput {
+    font-family: "Comic Sans MS";
+}
