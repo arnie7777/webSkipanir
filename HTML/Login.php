@@ -40,6 +40,8 @@ if(isset($_POST['submit'])) {
     <body>
         <div class="loginDiv">
                 <form id="loginForm" method="post" action="Login.php">
+                    <img height="50px" src="https://img.icons8.com/ios/50/000000/user--v1.png">
+                    <br>
                     <input class="loginInput"  name="username" type="text" id="username" placeholder="username">
                     <br>
                     <input class="loginInput"  name="password" type="password" id="password" placeholder="password">
