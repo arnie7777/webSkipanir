@@ -7,7 +7,7 @@
         <script src="../JS/JQuery.js"></script>
         <script src="../JS/MathForKids.js"></script>
     </head>
-    <body>s
+    <body>
         <!-- Create div -->
         <div id="title">&#128007; MATHMAGICIANS &#128007;</div>
         <!-- Create div with four links (four anchor elements) -->
